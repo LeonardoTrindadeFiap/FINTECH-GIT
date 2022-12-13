@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>FINTECH</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="header-left">
+                <span>Menu</span>
+            </div>
+            <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">account_circle</span>
+            </div>
+        </header>
+
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <P>FINTECH</P>
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">dashboard</span> Inicio
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">inventory_2</span> Contas
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">fact_check</span> Carteira
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">add_shopping_cart</span> Contas a Pagar
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">shopping_cart</span> Contas a Receber
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">poll</span> Métricas
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">settings</span> Configurações
+                </li>
+            </ul>
+        </aside>
+
+        <main class="main-container">
+            <div class="main-title">
+                <p class="font-weight-bold">INICIO</p>
+            </div>
+
+            <div class="main-cards">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">CONTAS A PAGAR</p>
+                    </div>
+                    <span class="text-primary font-weight-bold">10</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">CONTAS COM ATRASO</p>
+                    </div>
+                    <span class="text-primary font-weight-bold">2</span>
+                </div>
+
+            </div>
+
+            <div class="charts">
+
+                <div class="charts-card">
+                    <p class="chart-title">Métricas</p>
+                    <div id="bar-chart"></div>
+                </div>
+
+                <div class="charts-card">
+                    <p class="chart-title">Tabela De Gastos</p>
+                    <div id="area-chart"></div>
+                </div>
+
+            </div>
+        </main>
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
